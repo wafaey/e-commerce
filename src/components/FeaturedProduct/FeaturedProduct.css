@@ -1,0 +1,79 @@
+.Feature {
+  width: 90%;
+  padding-bottom: 2%;
+  border-bottom: 1px solid #857e7e75;
+}
+.Feature-Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Container {
+  display: flex;
+  align-items: end;
+}
+.Tag {
+  float: left;
+  position: absolute;
+  left: 5%;
+  z-index: 1000;
+  align-items: center;
+  background: white;
+  height: 9%;
+  justify-content: center;
+  width: 14%;
+  display: flex;
+}
+.Feature-Body {
+  display: flex;
+}
+.Cart-Button-After {
+  display: none;
+}
+.Recommendations {
+  display: flex;
+  justify-content: end;
+}
+.Recommendation-Image {
+  margin: 1%;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: right;
+}
+
+@media screen and (max-width: 500px) {
+  .Cart-Button {
+    display: none;
+  }
+  .Cart-Button-After {
+    display: block;
+  }
+  .Tag {
+    width: 35%;
+    height: 5%;
+  }
+  .Feature-Body {
+    flex-direction: column;
+  }
+  .Recommendations {
+    justify-content: center;
+  }
+  .Recommendation-Image {
+    margin: 2%;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+    text-align: left;
+  }
+}
